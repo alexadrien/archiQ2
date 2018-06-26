@@ -1,5 +1,6 @@
 import React from 'react';
 import {Card, CardContent, CardActions, Button, Typography} from '@material-ui/core';
+import {FormattedMessage} from 'react-intl';
 import './App.css';
 
 class Main extends React.Component {
@@ -9,7 +10,7 @@ class Main extends React.Component {
         <Card style={{width: '200px', margin: '300px auto'}}>
           <CardContent>
             <Typography color="textSecondary">
-              Like the older ArchiQ, but better
+              <FormattedMessage id="welcome_message"/>
             </Typography>
             <Typography variant="headline" component="h2">
               ArchiQ2
